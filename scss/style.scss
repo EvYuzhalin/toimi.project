@@ -554,6 +554,7 @@ $mobileSmall: 767px;
         }
         @include mobileSmall {
             width: 33px;
+            height: 28px;
         }
     }
     input[type="checkbox"] {
