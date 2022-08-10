@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>toimi.project</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="scss/img/logo.svg" alt="logo">
+            </a>
+            <nav class="header__navigation">
+                <a href="#">Проекты</a>
+                <a href="#">О компании</a>
+                <a href="#" class="active">Контакты</a>
+            </nav>
+            <div class="header__toolbar">
+                <div class="header__toolbar_lng">
+                    <button class="active">ru</button>
+                    <button>en</button>
+                </div>
+                <div class="header__toolbar_icon">
+                    <img src="scss/img/icon_menu_mobile.svg" alt="menu">
+                </div>
+                <div class="header__toolbar_btn">
+                    <a href="#">Начать проект</a>
+                    <div><img src="scss/img/str.svg" alt="str"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile__menu_box">
+            
+        </div>
+
+    </header>
+
+    <main class="container">
+        <div class="menu__button">
+            <img src="scss/img/menu__button.svg" alt="button">
+        </div>
+        <section class="breads">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li>Контакты</li>
+            </ul>
+        </section>
+        <section class="contactBox">
+            <div class="contactBox__container">
+                <h1 class="contactBox__container_title">Мы рядом</h1>
+                <div class="contactBox__container_description">Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите нам на почту 
+                    <a href="mail:info@site.com">info@site.com</a>
+                </div>
+                <div class="contactBox__container_form">
+                    <form action="" method="post" class="form" id="form">
+                        <div class="form__box">
+                            <div class="form__box_input width_castom">
+                                <label for="name" class="">Ваше имя <span>*</span></label>
+                                <input type="text" id="username" name="username" class="" required>
+                            </div>
+                            <div class="form__box_input width_small">
+                                <label for="mail" class="">Ваш E-Mail <span>*</span></label>
+                                <input type="text" name="usermail" id="usermail" required>
+                            </div>
+                            <div class="form__box_input comment_mg">
+                                <label for="comment" class="">Комментарий <span>*</span></label>
+                                <textarea type="text" name="comment" id="comment" required></textarea>
+                            </div>
+                            <div class="form__box_checkbox">
+                                <div class="form__box_checkbox_item">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <span class="form__box_checkbox_item_custom"></span>
+                                    <label for="checkbox" class="">Согласен с <a href="#">Политикой конфиденциальности</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactBox__container__button">
+                            <button class="button" id="submitButton" type="button" onclick="sendForm()">
+                                <div class="button__icon">
+                                    <img src="scss/img/airplane.svg" alt="airplane">
+                                </div>
+                                <div class="button__text">
+                                    Отправить
+                                </div>
+                                <div class="button__text_castom">
+                                    Ваше сообщение отправлено!
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__navigation">
+                <div class="footer__colm footer__colm_width">
+                    <div class="footer__logo">
+                        <img src="scss/img/logo_footer.svg" alt="logo" class="logo">
+                        <img src="scss/img/toimi.svg" alt="toimi_logo" class="toimi_logo">
+                    </div>
+                </div>
+                <div class="footer__colm mg_73">
+                    <div class="footer__title footer__title_width">
+                        Услуги
+                    </div>
+                    <nav>
+                        <a href="#">Support and development</a>
+                        <a href="#">UI/UX and product design</a>
+                        <a href="#">Progressive Web<br> Applications (PWA)</a>
+                    </nav>
+                </div>
+                <div class="footer__colm mg_131">
+                    <div class="footer__title">
+                        Компания
+                    </div>
+                    <nav>
+                        <a href="#">О компании</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__colm">
+                    <div class="footer__title">
+                        Контакты
+                    </div>
+                    <nav>
+                        <a href="uploads/test.txt" download class="download_style">Скачать презентацию <img class="download_style_img" src="scss/img/str_bg.svg" alt="str"></a>
+                        <a href="tel:+74999999999" class="number_style">+7 (499) 999-99-99</a>
+                        <a href="mail:info@site.com">info@site.com</a>
+                    </nav>
+                    <div class="footer__social">
+                        <nav>
+                            <a href="#">
+                                <img src="scss/img/tg_icon.svg" alt="telegram">
+                            </a>
+                            <a href="#">
+                                <img src="scss/img/wp_icon.svg" alt="whatsap">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright_item">
+                    <span>© Company 2022. All rights reserved.</span>
+                </div>
+                <div class="footer__copyright_item">
+                    <a href="#">Политика конфиденциальночти</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/libs/jquery-3.5.1.min.js"></script>
+    <script src="js/libs/slick.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+
+</body>
+
+</html>
