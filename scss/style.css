@@ -568,6 +568,7 @@ input[type=number] {
 @media (max-width: 767px) {
   .form__box_checkbox span {
     width: 33px;
+    height: 28px;
   }
 }
 .form__box_checkbox input[type=checkbox] {
